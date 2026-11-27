@@ -243,7 +243,7 @@ mostrar("Cifrado   (k = 3)", cifradoCesar)
 mostrar("Descifrado (k = -3)", cifradoCesar.flatMap(texto => procesarMensaje(texto, -3, cesar)))
 ```
 
-![Captura del caso César](casoCesar.png)
+![Captura del caso César](IMAGENES/casoCesar.png)
 
 ### Caso XOR
 
@@ -260,7 +260,7 @@ mostrar("Cifrado   (k = 5)", cifradoXor)
 mostrar("Descifrado (k = 5)", cifradoXor.flatMap(texto => procesarMensaje(texto, 5, xor)))
 ```
 
-![Captura del caso XOR](casoXOR.png)
+![Captura del caso XOR](IMAGENES/casoXOR.png)
 
 ### Manejo de errores
 
@@ -275,7 +275,7 @@ Pruebas donde se fuerza el fallo para demostrar la robustez del código.
 | XOR con clave -1 | `ERROR controlado: Clave inválida para XOR: -1 (debe estar entre 0 y 127).` |
 | XOR con `'ñ'` | `ERROR controlado: Carácter no soportado en XOR (no es ASCII): 'ñ'` |
 
-![Captura del manejo de errores](capturas/03-errores.png)
+![Captura del manejo de errores](IMAGENES/manejoErrores.png)
 
 
 
