@@ -177,7 +177,7 @@ object MotorCifrado {
   // 3. Pruebas
 
   // Muestra el resultado de un Try de forma elegante
-  private def mostrar(titulo: String, resultado: Try[String]): Unit =
+  def mostrar(titulo: String, resultado: Try[String]): Unit =
     resultado match {
       case Success(texto) => println(s"$titulo: $texto")
       case Failure(error) => println(s"$titulo -> ERROR controlado: ${error.getMessage}")
