@@ -243,7 +243,7 @@ mostrar("Cifrado   (k = 3)", cifradoCesar)
 mostrar("Descifrado (k = -3)", cifradoCesar.flatMap(texto => procesarMensaje(texto, -3, cesar)))
 ```
 
-![Captura del caso César](capturas/01-cesar.png)
+![Captura del caso César](casoCesar.png)
 
 ### Caso XOR
 
@@ -260,7 +260,7 @@ mostrar("Cifrado   (k = 5)", cifradoXor)
 mostrar("Descifrado (k = 5)", cifradoXor.flatMap(texto => procesarMensaje(texto, 5, xor)))
 ```
 
-![Captura del caso XOR](capturas/02-xor.png)
+![Captura del caso XOR](casoXOR.png)
 
 ### Manejo de errores
 
