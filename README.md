@@ -161,7 +161,7 @@ object MotorCifrado {
   }
 
   // Desplaza una letra respecto a la base ('A' o 'a'); el doble módulo evita negativos.
-  private def desplazar(caracter: Char, base: Char, clave: Int): Char =
+  def desplazar(caracter: Char, base: Char, clave: Int): Char =
     (((caracter - base + clave) % 26 + 26) % 26 + base).toChar
 
   /** Cifrado XOR: E(x, k) = ASCII(x) ^ k. Solo caracteres ASCII (0-127). */
